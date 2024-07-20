@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@/components/theme/theme-provider'
+import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -18,14 +19,14 @@ export default function RootLayout({
   return (
     // グローバルなcontextの初期化を行う
     <html lang="ja" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={cn(inter.className, 'min-h-dvh')}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <main>{children}</main>
+          {children}
         </ThemeProvider>
       </body>
     </html>
