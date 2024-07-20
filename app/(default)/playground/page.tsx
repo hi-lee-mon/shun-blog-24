@@ -1,5 +1,6 @@
 import Nextjs from '@/components/logo/next-logo'
 import { Button } from '@/components/ui/button'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 
 const TAGS = {
@@ -20,6 +21,11 @@ const contents: Content[] = [
     type: 'none',
   },
 ]
+
+export const metadata: Metadata = {
+  title: 'Playground',
+  description: '実用的な実装を一覧化したページ',
+}
 
 export default function Page() {
   return (
