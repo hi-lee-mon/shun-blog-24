@@ -14,9 +14,15 @@ export default function Header() {
         </div>
         <div className="flex gap-4">
           <ModeToggle />
-          <Button variant="ghost" asChild>
-            <Link href="/playground">playground</Link>
-          </Button>
+          <nav>
+            <ul className="flex gap-4">
+              <li>
+                <Button variant="ghost" asChild>
+                  <Link href="/playground">playground</Link>
+                </Button>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
