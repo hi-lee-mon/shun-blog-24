@@ -32,6 +32,11 @@ const contents: Content[] = [
     path: 'header-menu',
     type: 'none',
   },
+  {
+    title: 'カード',
+    path: 'card',
+    type: 'none',
+  },
 ]
 
 export const metadata: Metadata = {
