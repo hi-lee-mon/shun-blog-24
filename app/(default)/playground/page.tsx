@@ -37,6 +37,11 @@ const contents: Content[] = [
     path: 'card',
     type: 'none',
   },
+  {
+    title: 'パラレルルート・インターセプトルート',
+    path: 'para-inter-root',
+    type: 'next',
+  },
 ]
 
 export const metadata: Metadata = {
