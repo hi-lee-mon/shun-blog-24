@@ -1,4 +1,5 @@
-import Nextjs from '@/components/logo/next-logo'
+import NextLogo from '@/components/logo/next-logo'
+import ReactLogo from '@/components/logo/react-logo'
 import { Button } from '@/components/ui/button'
 import { Wrench } from 'lucide-react'
 import type { Metadata } from 'next'
@@ -6,8 +7,9 @@ import Link from 'next/link'
 
 const Types = {
   none: null,
-  next: <Nextjs />,
+  next: <NextLogo />,
   wip: <Wrench />,
+  react: <ReactLogo />,
 }
 
 type Content = {
@@ -41,6 +43,11 @@ const contents: Content[] = [
     title: 'パラレルルート・インターセプトルート',
     path: 'para-inter-root',
     type: 'next',
+  },
+  {
+    title: 'forwardRef',
+    path: 'forward-ref',
+    type: 'react',
   },
 ]
 
