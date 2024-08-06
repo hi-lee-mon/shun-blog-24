@@ -58,7 +58,7 @@ export default function Page() {
   )
 }
 
-export function CardWithForm({
+function CardWithForm({
   children,
   title,
   description,
@@ -79,7 +79,7 @@ export function CardWithForm({
   )
 }
 
-export function AccordionDemo() {
+function AccordionDemo() {
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
