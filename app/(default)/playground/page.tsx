@@ -1,4 +1,5 @@
 import NextLogo from '@/components/logo/next-logo'
+import ReactHookFormLogo from '@/components/logo/react-hook-form-logo'
 import ReactLogo from '@/components/logo/react-logo'
 import { Button } from '@/components/ui/button'
 import { Wrench } from 'lucide-react'
@@ -10,6 +11,7 @@ const Types = {
   next: <NextLogo />,
   wip: <Wrench />,
   react: <ReactLogo />,
+  reactHookFrom: <ReactHookFormLogo />,
 }
 
 type Content = {
@@ -49,6 +51,11 @@ const contents: Content[] = [
     path: 'forward-ref',
     type: 'react',
   },
+  {
+    title: '送信確認画面',
+    path: 'react-hook-form-confirm',
+    type: 'reactHookFrom',
+  },
 ]
 
 export const metadata: Metadata = {
@@ -58,7 +65,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex gap-2">
+    <div className="flex  gap-2">
       {contents.map((content) => (
         <div key={content.path}>
           <div className="flex gap-4">
