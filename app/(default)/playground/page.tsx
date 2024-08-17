@@ -1,3 +1,4 @@
+import MdxLogo from '@/components/logo/mdx-logo'
 import NextLogo from '@/components/logo/next-logo'
 import ReactHookFormLogo from '@/components/logo/react-hook-form-logo'
 import ReactLogo from '@/components/logo/react-logo'
@@ -12,6 +13,7 @@ const Types = {
   wip: <Wrench />,
   react: <ReactLogo />,
   reactHookFrom: <ReactHookFormLogo />,
+  mdx: <MdxLogo />,
 }
 
 type Content = {
@@ -55,6 +57,11 @@ const contents: Content[] = [
     title: '送信確認画面',
     path: 'react-hook-form-confirm',
     type: 'reactHookFrom',
+  },
+  {
+    title: 'MDX',
+    path: 'mdx',
+    type: 'mdx',
   },
 ]
 
