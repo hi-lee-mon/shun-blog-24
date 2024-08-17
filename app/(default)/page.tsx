@@ -46,19 +46,17 @@ export default function Home() {
       <Section title="経歴" className="animate-[slide-in-bck-top_0.7s]">
         <div className="flex flex-col gap-4 border-l-2 px-2">
           <div>
-            <span className="text-bold mr-2">1997</span>神奈川県で生まれる
+            <span className="mr-2 font-bold">1997</span>神奈川県で生まれる
           </div>
           <div>
-            <span className="text-bold mr-2">2020</span>
+            <span className="mr-2 font-bold">2020</span>
             亜細亜大学 経済学部 経済学科 卒業
           </div>
           <div>
-            <span className="text-bold mr-2">2020</span>
+            <span className="mr-2 font-bold">2020</span>
             株式会社 キーマネジメントソリューションズ 入社
           </div>
-          <div>
-            <span className="text-bold mr-2">現在に至る</span>
-          </div>
+          <div>現在に至る</div>
         </div>
       </Section>
       <Section title="スキル" className="animate-[slide-in-bck-top_0.9s]">
