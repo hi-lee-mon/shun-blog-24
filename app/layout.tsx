@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: '%s | Shun',
     default: 'Shun',
   },
-  description: "Shun's Blog",
+  description: "Shun's Blog", // TODO:ページの説明を詳細にする
 }
 
 export default function RootLayout({

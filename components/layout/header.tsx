@@ -8,7 +8,7 @@ export default function Header() {
     <header className="border-b">
       <div className="container flex h-16 items-center">
         <div className="flex flex-1 items-center gap-4">
-          <Button variant="ghost" asChild>
+          <Button variant="ghost" className="text-2xl font-bold" asChild>
             <Link href="/">{appConstants.title}</Link>
           </Button>
         </div>
