@@ -81,8 +81,7 @@ const config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-in-out',
         'accordion-up': 'accordion-up 0.2s ease-in-out',
-        'slide-in-bck-top':
-          'slide-in-bck-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both',
+        'slide-in-bck-top': 'slide-in-bck-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both',
       },
     },
   },

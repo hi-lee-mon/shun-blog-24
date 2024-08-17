@@ -18,9 +18,7 @@ export default function UserFormContextForm() {
   const router = useRouter()
   return (
     <div>
-      <h1 className="text-xl font-bold">
-        ユーザ情報をコンテキスト経由で受け渡す
-      </h1>
+      <h1 className="text-xl font-bold">ユーザ情報をコンテキスト経由で受け渡す</h1>
       <form
         onSubmit={handleSubmit(() => {
           router.push('/playground/react-hook-form-confirm/confirm')

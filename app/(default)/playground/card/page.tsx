@@ -6,13 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import {
   Carousel,
   CarouselContent,
@@ -30,10 +24,7 @@ export default function Page() {
       <div className="py-4">
         {/* tailwindはモバイルファーストなのでデフォルトモバイルとしてlgでPCようにカスタマイズする */}
         <div className="grid gap-4 lg:grid-cols-3">
-          <CardWithForm
-            title="プロジェクトの作成"
-            description="プロジェクトを作成します。"
-          >
+          <CardWithForm title="プロジェクトの作成" description="プロジェクトを作成します。">
             <form>
               <div className="grid w-full items-center gap-4">
                 <div className="flex flex-col space-y-1.5">
@@ -84,22 +75,18 @@ function AccordionDemo() {
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </AccordionContent>
+        <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
         <AccordionTrigger>Is it styled?</AccordionTrigger>
         <AccordionContent>
-          Yes. It comes with default styles that matches the other
-          components&apos; aesthetic.
+          Yes. It comes with default styles that matches the other components&apos; aesthetic.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
         <AccordionTrigger>Is it animated?</AccordionTrigger>
         <AccordionContent>
-          Yes. It&apos;s animated by default, but you can disable it if you
-          prefer.
+          Yes. It&apos;s animated by default, but you can disable it if you prefer.
         </AccordionContent>
       </AccordionItem>
     </Accordion>

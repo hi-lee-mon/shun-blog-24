@@ -14,11 +14,7 @@ import Link from 'next/link'
 // イメージだと以下の同階層のセグメントをインターセプトするのでフォルダ名の括弧が(.)になる。
 // /para-inter-root       /   [id]/page.tsx
 // /para-inter-root/@modal/(.)[id]/page.tsx
-export default async function Page({
-  params: { id },
-}: {
-  params: { id: string }
-}) {
+export default async function Page({ params: { id } }: { params: { id: string } }) {
   const pokemon = await getPokemon(id)
 
   return (

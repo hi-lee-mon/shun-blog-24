@@ -65,10 +65,7 @@ export default function ConfirmForm() {
     <div className="rounded-md border px-10 py-4 shadow-sm">
       <h1 className="text-xl font-bold">画面遷移無しで確認画面を表示する</h1>
       <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(handleSubmit, handleError)}
-          className="space-y-8"
-        >
+        <form onSubmit={form.handleSubmit(handleSubmit, handleError)} className="space-y-8">
           <FormField
             control={form.control}
             name="name"

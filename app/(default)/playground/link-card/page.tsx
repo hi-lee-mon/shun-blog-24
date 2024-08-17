@@ -14,13 +14,12 @@ export default function Page() {
             </Link>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            sequi repellat ex doloremque illum in saepe, sint quaerat, mollitia
-            asperiores beatae nam atque distinctio eius doloribus voluptatum
-            sapiente obcaecati repellendus! Consequatur omnis expedita magni
-            saepe eligendi ipsa modi ipsam iste sint, error asperiores vel.
-            Totam deserunt in enim mollitia quae natus! Molestiae inventore
-            voluptatem molestias consequatur totam tenetur at pariatur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sequi repellat ex
+            doloremque illum in saepe, sint quaerat, mollitia asperiores beatae nam atque distinctio
+            eius doloribus voluptatum sapiente obcaecati repellendus! Consequatur omnis expedita
+            magni saepe eligendi ipsa modi ipsam iste sint, error asperiores vel. Totam deserunt in
+            enim mollitia quae natus! Molestiae inventore voluptatem molestias consequatur totam
+            tenetur at pariatur?
           </p>
           <div className="flex gap-4">
             <Button variant="outline" className="z-10" asChild>

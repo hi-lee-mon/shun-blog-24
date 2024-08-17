@@ -2,11 +2,7 @@ import { getPokemon } from '@/app/(default)/playground/para-inter-root/data/poke
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
-export default async function Page({
-  params: { id },
-}: {
-  params: { id: string }
-}) {
+export default async function Page({ params: { id } }: { params: { id: string } }) {
   const pokemon = await getPokemon(id)
   return (
     <div className="container">

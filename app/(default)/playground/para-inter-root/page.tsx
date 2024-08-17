@@ -10,10 +10,7 @@ export default async function Page() {
         <div key={pokemon.id} className="relative rounded-lg bg-slate-200 p-4">
           <h2 className="text-xl font-bold">
             {pokemon.name}
-            <Link
-              href={`/playground/para-inter-root/${pokemon.id}`}
-              className="text-3xl"
-            >
+            <Link href={`/playground/para-inter-root/${pokemon.id}`} className="text-3xl">
               <span className="absolute inset-0"></span>
             </Link>
           </h2>
