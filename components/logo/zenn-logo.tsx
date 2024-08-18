@@ -1,4 +1,4 @@
-export default function ZennLogo() {
+export const ZennLogo = () => {
   return (
     <svg
       role="img"

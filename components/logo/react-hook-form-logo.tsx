@@ -1,4 +1,4 @@
-export default function ReactHookFormLogo() {
+export const ReactHookFormLogo = () => {
   return (
     <svg
       role="img"

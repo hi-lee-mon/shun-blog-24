@@ -3,7 +3,7 @@ import { appConstants } from '@/constants/app'
 import Link from 'next/link'
 import { ModeToggle } from '../theme/mode-toggle'
 
-export default function Header() {
+export const Header = () => {
   return (
     <header className="border-b">
       <div className="container flex h-16 items-center">

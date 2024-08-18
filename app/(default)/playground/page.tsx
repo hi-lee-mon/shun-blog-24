@@ -1,7 +1,7 @@
-import MdxLogo from '@/components/logo/mdx-logo'
-import NextLogo from '@/components/logo/next-logo'
-import ReactHookFormLogo from '@/components/logo/react-hook-form-logo'
-import ReactLogo from '@/components/logo/react-logo'
+import { MdxLogo } from '@/components/logo/mdx-logo'
+import { NextjsLogo } from '@/components/logo/nextjs-logo'
+import { ReactHookFormLogo } from '@/components/logo/react-hook-form-logo'
+import { ReactLogo } from '@/components/logo/react-logo'
 import { Button } from '@/components/ui/button'
 import { Wrench } from 'lucide-react'
 import type { Metadata } from 'next'
@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const Types = {
   none: null,
-  next: <NextLogo />,
+  next: <NextjsLogo />,
   wip: <Wrench />,
   react: <ReactLogo />,
   reactHookFrom: <ReactHookFormLogo />,

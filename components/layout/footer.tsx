@@ -1,4 +1,4 @@
-export default function Footer() {
+export const Footer = () => {
   return (
     //  footerを画面下部に配置する場合、親要素のクラスに依存する。左記のクラスを親に設定すること。className="min-h-dvh flex flex-col"
     <footer className="sticky top-full border-t">

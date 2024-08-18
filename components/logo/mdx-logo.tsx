@@ -1,4 +1,4 @@
-export default function MdxLogo() {
+export const MdxLogo = () => {
   return (
     <svg
       role="img"

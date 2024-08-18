@@ -1,5 +1,5 @@
-import GithubLogo from '@/components/logo/github-logo'
-import ZennLogo from '@/components/logo/zenn-logo'
+import { GithubLogo } from '@/components/logo/github-logo'
+import { ZennLogo } from '@/components/logo/zenn-logo'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'

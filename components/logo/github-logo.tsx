@@ -1,4 +1,4 @@
-export default function GithubLogo() {
+export const GithubLogo = () => {
   return (
     <svg
       role="img"

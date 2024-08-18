@@ -1,5 +1,5 @@
 import type { SVGProps } from 'react'
-const Nextjs = (props: SVGProps<SVGSVGElement>) => (
+export const NextjsLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="1.5em"
     height="1.5em"
@@ -55,4 +55,3 @@ const Nextjs = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
-export default Nextjs
