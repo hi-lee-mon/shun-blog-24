@@ -9,5 +9,20 @@
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "eslint.validate": ["html", "javascript", "javascriptreact", "typescript", "typescriptreact"],
-  "cSpell.words": ["KANTO", "Nextjs", "POKEMONS"]
+  "cSpell.words": [
+    "clsx",
+    "embla",
+    "hookform",
+    "Kameda",
+    "KANTO",
+    "lucide",
+    "mdxeditor",
+    "Nextjs",
+    "POKEMONS",
+    "rehype",
+    "shiki",
+    "Shunsuke",
+    "tailwindcss",
+    "Zenn"
+  ]
 }
