@@ -87,7 +87,7 @@ export function DropdownMenuCheckboxes() {
   )
 }
 
-export function MobileNav() {
+function MobileNav() {
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -162,7 +162,7 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ]
 
-export function Nav() {
+function Nav() {
   return (
     <NavigationMenu className="hidden lg:block">
       <NavigationMenuList>

@@ -93,7 +93,7 @@ function AccordionDemo() {
   )
 }
 
-export function CarouselDemo() {
+function CarouselDemo() {
   return (
     <Carousel>
       <CarouselContent>
