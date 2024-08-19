@@ -26,10 +26,18 @@ const Section = ({
   )
 }
 
-const IconLinkItem = ({ logo, linkText }: { logo: JSX.Element; linkText: string }) => {
+const IconLinkItem = ({
+  logo,
+  href,
+  linkText,
+}: {
+  logo: JSX.Element
+  href: string
+  linkText: string
+}) => {
   return (
     <li className="transition-all hover:underline">
-      <a href="https://zenn.dev/hokoripon" target="_blank" rel="noreferrer" className="flex gap-2">
+      <a href={href} target="_blank" rel="noreferrer" className="flex gap-2">
         {logo}
         {linkText}
       </a>
@@ -83,9 +91,17 @@ export default function Home() {
         </Section>
         <Section title="My Web" className="animate-[slide-in-bck-top_1.3s]">
           <ul className="flex flex-col gap-4">
-            <IconLinkItem logo={<ZennLogo />} linkText="Zenn" />
-            <IconLinkItem logo={<GithubLogo />} linkText="GitHub" />
-            <IconLinkItem logo={<ZennLogo />} linkText="現在は更新していないZenn" />
+            <IconLinkItem logo={<ZennLogo />} href="https://zenn.dev/hokoripon" linkText="Zenn" />
+            <IconLinkItem
+              logo={<GithubLogo />}
+              href="https://github.com/hi-lee-mon"
+              linkText="GitHub"
+            />
+            <IconLinkItem
+              logo={<ZennLogo />}
+              href="https://zenn.dev/nash"
+              linkText="現在は更新していないZenn"
+            />
           </ul>
         </Section>
       </div>
