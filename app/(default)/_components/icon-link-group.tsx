@@ -12,7 +12,7 @@ export const IconLinkGroupItem = ({
   linkText: string
 }) => {
   return (
-    <li className="transition-all hover:underline">
+    <li className="w-fit transition-all hover:underline">
       <a href={href} target="_blank" rel="noreferrer" className="flex gap-2">
         {logo}
         {linkText}
