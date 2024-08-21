@@ -1,4 +1,8 @@
-export const IconLinkItem = ({
+export const IconLinkGroup = ({ children }: { children: React.ReactNode }) => {
+  return <ul className="flex flex-col gap-4">{children}</ul>
+}
+
+export const IconLinkGroupItem = ({
   logo,
   href,
   linkText,

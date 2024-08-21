@@ -1,5 +1,5 @@
-import { IconLinkItem } from '@/app/(default)/_components/IconLinkItem'
-import { Section } from '@/app/(default)/_components/Section'
+import { IconLinkGroup, IconLinkGroupItem } from '@/app/(default)/_components/icon-link-group'
+import { Section } from '@/app/(default)/_components/section'
 import { GithubLogo } from '@/components/logo/github-logo'
 import { ZennLogo } from '@/components/logo/zenn-logo'
 import { Button } from '@/components/ui/button'
@@ -56,19 +56,23 @@ export default function Home() {
           </ul>
         </Section>
         <Section title="My Web" className="animate-[slide-in-bck-top_1.3s]">
-          <ul className="flex flex-col gap-4">
-            <IconLinkItem logo={<ZennLogo />} href="https://zenn.dev/hokoripon" linkText="Zenn" />
-            <IconLinkItem
+          <IconLinkGroup>
+            <IconLinkGroupItem
+              logo={<ZennLogo />}
+              href="https://zenn.dev/hokoripon"
+              linkText="Zenn"
+            />
+            <IconLinkGroupItem
               logo={<GithubLogo />}
               href="https://github.com/hi-lee-mon"
               linkText="GitHub"
             />
-            <IconLinkItem
+            <IconLinkGroupItem
               logo={<ZennLogo />}
               href="https://zenn.dev/nash"
               linkText="現在は更新していないZenn"
             />
-          </ul>
+          </IconLinkGroup>
         </Section>
       </div>
     </div>
