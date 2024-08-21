@@ -1,3 +1,5 @@
+import { IconLinkItem } from '@/app/(default)/_components/IconLinkItem'
+import { Section } from '@/app/(default)/_components/Section'
 import { GithubLogo } from '@/components/logo/github-logo'
 import { ZennLogo } from '@/components/logo/zenn-logo'
 import { Button } from '@/components/ui/button'
@@ -7,42 +9,6 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Home',
   description: "Shun's Blog", // TODO:ページの説明を詳細にする
-}
-
-const Section = ({
-  title,
-  className,
-  children,
-}: {
-  title: string
-  className?: string
-  children: React.ReactNode
-}) => {
-  return (
-    <section className={className}>
-      <h2 className="inline-block	 border-b-2 text-xl font-bold">{title}</h2>
-      <div className="p-4">{children}</div>
-    </section>
-  )
-}
-
-const IconLinkItem = ({
-  logo,
-  href,
-  linkText,
-}: {
-  logo: JSX.Element
-  href: string
-  linkText: string
-}) => {
-  return (
-    <li className="transition-all hover:underline">
-      <a href={href} target="_blank" rel="noreferrer" className="flex gap-2">
-        {logo}
-        {linkText}
-      </a>
-    </li>
-  )
 }
 
 export default function Home() {
