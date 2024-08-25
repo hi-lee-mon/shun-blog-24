@@ -1,3 +1,5 @@
+import { MobileNav } from '@/components/layout/mobile-nav'
+import Nav from '@/components/layout/nav'
 import { Button } from '@/components/ui/button'
 import { appConstants } from '@/constants/app'
 import Link from 'next/link'
@@ -12,18 +14,10 @@ export const Header = () => {
             <Link href="/">{appConstants.title}</Link>
           </Button>
         </div>
-        <div className="flex gap-4">
-          <ModeToggle />
-          <nav>
-            <ul className="flex gap-4">
-              <li>
-                <Button variant="ghost" asChild>
-                  <Link href="/playground">playground</Link>
-                </Button>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <ModeToggle />
+        <span className="mr-4"></span>
+        <MobileNav />
+        <Nav />
       </div>
     </header>
   )

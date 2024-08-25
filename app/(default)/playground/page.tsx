@@ -22,7 +22,7 @@ type Content = {
   type: keyof typeof Types
 }
 
-const contents: Content[] = [
+export const playgroundContents: Content[] = [
   {
     title: '実験用',
     path: 'wip',
@@ -78,7 +78,7 @@ export default function Page() {
         <p className="text-muted-foreground">Shunが実装できるものを一覧化したページです。</p>
       </div>
       <div className="flex flex-wrap gap-2">
-        {contents.map((content) => (
+        {playgroundContents.map((content) => (
           <div key={content.path}>
             <div className="flex gap-4">
               <Button variant="outline" asChild>
