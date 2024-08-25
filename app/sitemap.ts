@@ -1,4 +1,4 @@
-import { playgroundContents } from '@/app/(default)/playground/page'
+import { playgroundContents } from '@/constants/playground'
 import { getBlogPosts } from '@/lib/blog'
 import { getCurrentDateJp } from '@/lib/date'
 import { getOrigin } from '@/lib/getOrigin'
