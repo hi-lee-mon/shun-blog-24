@@ -4,7 +4,7 @@ import { GithubLogo } from '@/components/logo/github-logo'
 import { ZennLogo } from '@/components/logo/zenn-logo'
 import { Button } from '@/components/ui/button'
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 
 export const metadata: Metadata = {
   title: 'Home',

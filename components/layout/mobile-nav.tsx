@@ -2,7 +2,7 @@
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Menu } from 'lucide-react'
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 
 const links = [
   {

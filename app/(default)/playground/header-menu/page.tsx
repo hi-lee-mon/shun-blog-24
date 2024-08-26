@@ -33,7 +33,7 @@ import {
 import { cn } from '@/lib/utils'
 import type { DropdownMenuCheckboxItemProps } from '@radix-ui/react-dropdown-menu'
 import { Menu } from 'lucide-react'
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 import * as React from 'react'
 
 export default function Page() {

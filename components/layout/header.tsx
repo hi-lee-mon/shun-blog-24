@@ -2,7 +2,7 @@ import { MobileNav } from '@/components/layout/mobile-nav'
 import Nav from '@/components/layout/nav'
 import { Button } from '@/components/ui/button'
 import { appConstants } from '@/constants/app'
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 import { ModeToggle } from '../theme/mode-toggle'
 
 export const Header = () => {

@@ -1,5 +1,5 @@
 import { getBlogPosts } from '@/lib/blog'
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 
 export function BlogPosts() {
   const allBlogs = getBlogPosts()

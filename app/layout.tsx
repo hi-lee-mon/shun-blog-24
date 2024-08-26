@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@/components/theme/theme-provider'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
+import { ViewTransitions } from 'next-view-transitions'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -29,7 +30,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <ViewTransitions>{children}</ViewTransitions>
         </ThemeProvider>
       </body>
     </html>

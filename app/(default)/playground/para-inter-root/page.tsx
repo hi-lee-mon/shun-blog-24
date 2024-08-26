@@ -1,5 +1,5 @@
 import { getAllPokemons } from '@/app/(default)/playground/para-inter-root/data/pokemon'
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 
 export default async function Page() {
   const pokemons = await getAllPokemons()

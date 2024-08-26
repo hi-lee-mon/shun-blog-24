@@ -1,6 +1,6 @@
 import { getPokemon } from '@/app/(default)/playground/para-inter-root/data/pokemon'
 import { Button } from '@/components/ui/button'
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 
 export default async function Page({ params: { id } }: { params: { id: string } }) {
   const pokemon = await getPokemon(id)
