@@ -1,4 +1,4 @@
-import { CustomMdxRemote } from '@/app/(default)/blog/_components/custom-mdx-remote'
+import { CustomMdxRemote } from '@/app/(default)/blog/[slug]/_components/custom-mdx-remote'
 import { formatDate, getBlogPosts } from '@/lib/blog'
 import { getOrigin } from '@/lib/getOrigin'
 import { notFound } from 'next/navigation'
