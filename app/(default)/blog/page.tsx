@@ -10,7 +10,7 @@ export default function Blog() {
           className="inline-block items-center"
           rel="noopener noreferrer"
           target="_blank"
-          href="/rss"
+          href="/blog/rss"
         >
           <Rss className="transition-all duration-300 hover:text-blue-500" />
           <span className="sr-only">RSSフィード</span>

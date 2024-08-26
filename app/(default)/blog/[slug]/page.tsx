@@ -19,7 +19,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   }
   const { title, publishedAt, summary, image } = post.metadata
   const origin = getOrigin()
-  const ogImage = image ?? `${origin}/og?title=${encodeURIComponent(title)}`
+  const ogImage = image ?? `${origin}/blog/og?title=${encodeURIComponent(title)}`
 
   return {
     title,
@@ -69,7 +69,7 @@ export default function Blog({ params }: { params: { slug: string } }) {
             description: post.metadata.summary,
             image: post.metadata.image
               ? `${origin}${post.metadata.image}`
-              : `/og?title=${encodeURIComponent(post.metadata.title)}`,
+              : `/blog/og?title=${encodeURIComponent(post.metadata.title)}`,
             url: `${origin}/blog/${post.slug}`,
             author: {
               '@type': 'Person',
