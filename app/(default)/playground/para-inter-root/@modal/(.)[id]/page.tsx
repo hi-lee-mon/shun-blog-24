@@ -8,7 +8,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog'
-import { Link } from 'next-view-transitions'
+import Link from 'next/link'
 
 // /para-inter-root/[id]のリクエストが来た時にインターセプトして以下が表示される
 // イメージだと以下の同階層のセグメントをインターセプトするのでフォルダ名の括弧が(.)になる。

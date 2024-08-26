@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { contentsType, playgroundContents } from '@/constants/playground'
 import type { Metadata } from 'next'
-import { Link } from 'next-view-transitions'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Playground',
