@@ -19,6 +19,13 @@ export const MobileNav = () => {
             <li>
               <SheetClose asChild>
                 <Button variant="ghost" className="w-full justify-start" asChild>
+                  <Link href="/">Home</Link>
+                </Button>
+              </SheetClose>
+            </li>
+            <li>
+              <SheetClose asChild>
+                <Button variant="ghost" className="w-full justify-start" asChild>
                   <Link href="/blog">Blog</Link>
                 </Button>
               </SheetClose>
