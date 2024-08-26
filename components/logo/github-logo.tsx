@@ -1,4 +1,8 @@
-export const GithubLogo = () => {
+type Props = {
+  ariaHidden?: boolean
+}
+
+export const GithubLogo = (props: Props) => {
   return (
     <svg
       role="img"
@@ -6,6 +10,7 @@ export const GithubLogo = () => {
       xmlns="http://www.w3.org/2000/svg"
       width="1.5em"
       height="1.5em"
+      aria-hidden={props.ariaHidden}
     >
       <title>GitHub</title>
       <path

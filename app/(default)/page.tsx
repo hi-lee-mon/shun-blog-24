@@ -58,17 +58,17 @@ export default function Home() {
         <Section title="My Web" className="animate-[slide-in-bck-top_1.3s]">
           <IconLinkGroup>
             <IconLinkGroupItem
-              logo={<ZennLogo />}
+              logo={<ZennLogo ariaHidden />}
               href="https://zenn.dev/hokoripon"
               linkText="Zenn"
             />
             <IconLinkGroupItem
-              logo={<GithubLogo />}
+              logo={<GithubLogo ariaHidden />}
               href="https://github.com/hi-lee-mon"
               linkText="GitHub"
             />
             <IconLinkGroupItem
-              logo={<ZennLogo />}
+              logo={<ZennLogo ariaHidden />}
               href="https://zenn.dev/nash"
               linkText="現在は更新していないZenn"
             />

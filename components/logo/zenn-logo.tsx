@@ -1,4 +1,8 @@
-export const ZennLogo = () => {
+type Props = {
+  ariaHidden?: boolean
+}
+
+export const ZennLogo = (props: Props) => {
   return (
     <svg
       role="img"
@@ -6,6 +10,7 @@ export const ZennLogo = () => {
       xmlns="http://www.w3.org/2000/svg"
       width="1.5em"
       height="1.5em"
+      aria-hidden={props.ariaHidden}
     >
       <title>Zenn</title>
       <path
