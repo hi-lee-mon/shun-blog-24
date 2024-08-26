@@ -22,7 +22,7 @@ export default function Home() {
           主にReactを使用したWebアプリケーション開発をしています。
         </p>
         <Button asChild className="w-fit">
-          <Link href="/blog">技術ブログページへ</Link>
+          <Link href="/blog">技術ブログを読む</Link>
         </Button>
       </section>
       <div className="flex flex-col gap-8">
