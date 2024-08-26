@@ -4,6 +4,21 @@ import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/s
 import { Menu } from 'lucide-react'
 import Link from 'next/link'
 
+const links = [
+  {
+    href: '/',
+    label: 'home',
+  },
+  {
+    href: '/blog',
+    label: 'blog',
+  },
+  {
+    href: '/playground',
+    label: 'playground',
+  },
+]
+
 export const MobileNav = () => {
   return (
     <Sheet>
@@ -16,27 +31,17 @@ export const MobileNav = () => {
       <SheetContent side="right" className="pt-10">
         <nav>
           <ul className="flex flex-col gap-4">
-            <li>
-              <SheetClose asChild>
-                <Button variant="ghost" className="w-full justify-start" asChild>
-                  <Link href="/">Home</Link>
-                </Button>
-              </SheetClose>
-            </li>
-            <li>
-              <SheetClose asChild>
-                <Button variant="ghost" className="w-full justify-start" asChild>
-                  <Link href="/blog">Blog</Link>
-                </Button>
-              </SheetClose>
-            </li>
-            <li>
-              <SheetClose asChild>
-                <Button variant="ghost" className="w-full justify-start" asChild>
-                  <Link href="/playground">Playground</Link>
-                </Button>
-              </SheetClose>
-            </li>
+            {links.map((link) => (
+              <li key={link.href}>
+                <SheetClose asChild>
+                  <Button variant="ghost" className="w-full justify-start" asChild>
+                    <Link href={link.href} className="capitalize">
+                      {link.label}
+                    </Link>
+                  </Button>
+                </SheetClose>
+              </li>
+            ))}
           </ul>
         </nav>
       </SheetContent>
