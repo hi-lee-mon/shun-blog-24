@@ -64,7 +64,7 @@ export default function Home() {
             />
             <IconLinkGroupItem
               logo={<GithubLogo ariaHidden />}
-              href="https://github.com/hi-lee-mon"
+              href="https://github.com/hi-lee-mon/shun-blog-24"
               linkText="GitHub"
             />
             <IconLinkGroupItem
