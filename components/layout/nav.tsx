@@ -21,7 +21,7 @@ export default function Nav() {
     <nav className="hidden md:block">
       <ul className="flex gap-4">
         {links.map((link) => (
-          <li key={link.href} className={cn(pathname === link.href ? 'border-b' : '')}>
+          <li key={link.href} className={cn(pathname === link.href ? 'border-b-2' : '')}>
             <Button variant="ghost" asChild>
               <Link href={link.href} className="capitalize">
                 {link.label}
