@@ -2,6 +2,7 @@ import { MdxLogo } from '@/components/logo/mdx-logo'
 import { NextjsLogo } from '@/components/logo/nextjs-logo'
 import { ReactHookFormLogo } from '@/components/logo/react-hook-form-logo'
 import { ReactLogo } from '@/components/logo/react-logo'
+import { SupabaseLogo } from '@/components/logo/supabase-logo'
 import { Wrench } from 'lucide-react'
 
 export const contentsType = {
@@ -11,6 +12,7 @@ export const contentsType = {
   react: <ReactLogo />,
   reactHookFrom: <ReactHookFormLogo />,
   mdx: <MdxLogo />,
+  supabase: <SupabaseLogo />,
 }
 
 type Content = {
@@ -59,5 +61,10 @@ export const playgroundContents: Content[] = [
     title: 'MDX',
     path: 'mdx',
     type: 'mdx',
+  },
+  {
+    title: 'supabase',
+    path: 'supabase',
+    type: 'supabase',
   },
 ]
