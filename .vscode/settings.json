@@ -12,6 +12,7 @@
   "cSpell.words": [
     "clsx",
     "embla",
+    "Fullname",
     "hookform",
     "Kameda",
     "KANTO",
@@ -23,9 +24,13 @@
     "rehype",
     "shiki",
     "Shunsuke",
+    "signout",
+    "signup",
     "supabase",
     "Supbase",
     "tailwindcss",
+    "todos",
+    "upsert",
     "Zenn"
   ]
 }

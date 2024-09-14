@@ -13,6 +13,7 @@ export const contentsType = {
   reactHookFrom: <ReactHookFormLogo />,
   mdx: <MdxLogo />,
   supabase: <SupabaseLogo />,
+  rendering: <NextjsLogo />,
 }
 
 type Content = {
@@ -63,7 +64,7 @@ export const playgroundContents: Content[] = [
     type: 'mdx',
   },
   {
-    title: 'supabase',
+    title: 'メール認証、楽観的更新、ServerActionでTODOアプリ',
     path: 'supabase',
     type: 'supabase',
   },
