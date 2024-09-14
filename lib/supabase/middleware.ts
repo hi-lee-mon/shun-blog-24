@@ -16,7 +16,7 @@ export async function updateSession(request: NextRequest) {
         },
         setAll(cookiesToSet) {
           // request.cookies.setでSCにリフレッシュされた認証トークンを渡す=>SC自身で同じトークンを更新することを防げる
-          cookiesToSet.forEach(({ name, value, options }) => request.cookies.set(name, value))
+          cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value))
           supabaseResponse = NextResponse.next({
             request,
           })
