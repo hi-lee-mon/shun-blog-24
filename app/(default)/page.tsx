@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <section className="mb-10 flex flex-col gap-4">
-        <h1 className="text-balance text-4xl font-bold">Kameda Shunsukeについて🐢</h1>
+        <h1 className="text-4xl font-bold">Kameda Shunsukeについて🐢</h1>
         <p className="text-lg">
           Shunsukeは東京で働くフロントエンドエンジニアです。
           <br />

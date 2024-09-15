@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     // グローバルなcontextの初期化を行う
     <html lang="ja" suppressHydrationWarning>
-      <body className={cn(inter.className, 'min-h-dvh')}>
+      <body className={cn(inter.className, 'min-h-dvh text-balance')}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
