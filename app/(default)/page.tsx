@@ -1,8 +1,7 @@
 import { IconLinkGroup, IconLinkGroupItem } from '@/app/(default)/_components/icon-link-group'
 import { Section } from '@/app/(default)/_components/section'
-import { GithubLogo } from '@/components/logo/github-logo'
-import { ZennLogo } from '@/components/logo/zenn-logo'
 import { Button } from '@/components/ui/button'
+import { myWebs } from '@/constants/myWeb'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
@@ -57,21 +56,14 @@ export default function Home() {
         </Section>
         <Section title="My Web" className="animate-[slide-in-bck-top_1.3s]">
           <IconLinkGroup>
-            <IconLinkGroupItem
-              logo={<ZennLogo ariaHidden />}
-              href="https://zenn.dev/hokoripon"
-              linkText="Zenn"
-            />
-            <IconLinkGroupItem
-              logo={<GithubLogo ariaHidden />}
-              href="https://github.com/hi-lee-mon/shun-blog-24"
-              linkText="GitHub"
-            />
-            <IconLinkGroupItem
-              logo={<ZennLogo ariaHidden />}
-              href="https://zenn.dev/nash"
-              linkText="現在は更新していないZenn"
-            />
+            {myWebs.map((myWeb) => (
+              <IconLinkGroupItem
+                key={myWeb.href}
+                logo={myWeb.logo}
+                href={myWeb.href}
+                linkText={myWeb.linkText}
+              />
+            ))}
           </IconLinkGroup>
         </Section>
       </div>
