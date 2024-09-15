@@ -6,7 +6,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Header />
-      <div className="pl-5 pt-8">
+      <div className="container mx-auto px-5 pt-8">
         <BreadcrumbLayout />
       </div>
       <main className="container mx-auto px-5 py-10 tracking-wide">{children}</main>
