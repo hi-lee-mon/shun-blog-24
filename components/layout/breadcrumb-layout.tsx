@@ -12,6 +12,23 @@ import { House } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname, useSelectedLayoutSegments } from 'next/navigation'
 
+const HomeBreadcrumbItem = ({ currentSegment }: { currentSegment: string | undefined }) => {
+  const homeActive = currentSegment === ''
+  return (
+    <BreadcrumbItem className={cn(homeActive ? 'text-foreground' : '')}>
+      <House size="1rem" />
+      {homeActive ? (
+        // ホームのいるときはリンクではなくテキストを表示する
+        <p className="text-foreground">Home</p>
+      ) : (
+        <BreadcrumbLink asChild>
+          <Link href="/">Home</Link>
+        </BreadcrumbLink>
+      )}
+    </BreadcrumbItem>
+  )
+}
+
 export const BreadcrumbLayout = () => {
   const segments = useSelectedLayoutSegments()
   const pathname = usePathname()
@@ -21,12 +38,8 @@ export const BreadcrumbLayout = () => {
     <Breadcrumb>
       <BreadcrumbList className="flex items-center">
         {/* ホームのリンクは常に表示する */}
-        <BreadcrumbItem className={cn('' === currentSegment ? 'text-foreground' : '')}>
-          <House size="1rem" />
-          <BreadcrumbLink asChild>
-            <Link href="/">Home</Link>
-          </BreadcrumbLink>
-        </BreadcrumbItem>
+        <HomeBreadcrumbItem currentSegment={currentSegment} />
+        {/* 動的なセグメントのリンクを表示する */}
         {segments.map((segment, index, arr) => {
           if (arr.length === index + 1) {
             // 最後の要素の場合はリンクではなくテキストを表示する
