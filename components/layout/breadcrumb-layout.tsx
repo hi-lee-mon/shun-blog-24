@@ -33,7 +33,7 @@ export const BreadcrumbLayout = () => {
             return (
               <>
                 <BreadcrumbSeparator className="px-1" />
-                <p key={segment} className={segment === currentSegment ? 'text-foreground' : ''}>
+                <p key={segment} className="text-foreground">
                   {segment}
                 </p>
               </>
