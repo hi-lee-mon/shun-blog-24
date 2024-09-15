@@ -13,7 +13,6 @@ export const contentsType = {
   reactHookFrom: <ReactHookFormLogo />,
   mdx: <MdxLogo />,
   supabase: <SupabaseLogo />,
-  rendering: <NextjsLogo />,
 }
 
 type Content = {
