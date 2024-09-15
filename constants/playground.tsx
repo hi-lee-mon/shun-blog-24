@@ -17,7 +17,7 @@ export const contentsType = {
   swr: <SwrLogo />,
 }
 
-type Content = {
+export type Content = {
   title: string
   path: string
   type: keyof typeof contentsType
