@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Header />
-      <main className="container mx-auto py-10 tracking-wide">{children}</main>
+      <main className="container mx-auto px-5 py-10 tracking-wide">{children}</main>
       <Footer />
     </>
   )
