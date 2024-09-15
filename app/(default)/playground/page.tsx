@@ -33,7 +33,7 @@ export default function Page() {
             {/* 分類ロゴ */}
             <div className="pb-2 text-xl">{contentsType[type] ?? '分類なし'}</div>
             {/* コンテンツ */}
-            <div className="flex gap-4 pl-6">
+            <div className="flex flex-wrap gap-4 pl-6">
               {contents.map((content) => (
                 <Button key={content.path} variant="outline" asChild>
                   <Link href={`/playground/${content.path}`} className="flex gap-2">
