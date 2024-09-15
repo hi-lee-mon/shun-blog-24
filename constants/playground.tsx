@@ -3,6 +3,7 @@ import { NextjsLogo } from '@/components/logo/nextjs-logo'
 import { ReactHookFormLogo } from '@/components/logo/react-hook-form-logo'
 import { ReactLogo } from '@/components/logo/react-logo'
 import { SupabaseLogo } from '@/components/logo/supabase-logo'
+import { SwrLogo } from '@/components/logo/swr-logo'
 import { Wrench } from 'lucide-react'
 
 export const contentsType = {
@@ -13,6 +14,7 @@ export const contentsType = {
   reactHookFrom: <ReactHookFormLogo />,
   mdx: <MdxLogo />,
   supabase: <SupabaseLogo />,
+  swr: <SwrLogo />,
 }
 
 type Content = {
@@ -66,5 +68,10 @@ export const playgroundContents: Content[] = [
     title: 'メール認証、楽観的更新、ServerActionでTODOアプリ',
     path: 'supabase',
     type: 'supabase',
+  },
+  {
+    title: 'SWR',
+    path: 'swr',
+    type: 'swr',
   },
 ]

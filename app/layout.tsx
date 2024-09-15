@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@/components/theme/theme-provider'
+import { Toaster } from '@/components/ui/toaster'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
 import { ViewTransitions } from 'next-view-transitions'
@@ -31,6 +32,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ViewTransitions>{children}</ViewTransitions>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
