@@ -19,30 +19,30 @@ export const BreadcrumbLayout = () => {
   const currentSegment = pathname.split('/').at(-1)
 
   return (
-    <div className="flex items-center gap-2 pl-5 pt-2">
-      <House size="1rem" />
-      <Breadcrumb>
-        <BreadcrumbList>
-          <BreadcrumbItem className={cn('' === currentSegment ? 'text-foreground' : '')}>
-            <BreadcrumbLink asChild>
-              <Link href="/">Home</Link>
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-          {segments.length === 0 ? null : <BreadcrumbSeparator />}
-          {segments.map((segment, index) => {
-            return (
-              <div key={segment} className="flex items-center gap-2">
-                <BreadcrumbItem className={cn(segment === currentSegment ? 'text-foreground' : '')}>
-                  <BreadcrumbLink asChild>
-                    <Link href={`/${segment}`}> {segment}</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                {segments.length === index + 1 ? null : <BreadcrumbSeparator />}
-              </div>
-            )
-          })}
-        </BreadcrumbList>
-      </Breadcrumb>
-    </div>
+    <Breadcrumb>
+      <BreadcrumbList className="flex items-center pl-5 pt-8">
+        <BreadcrumbItem className={cn('' === currentSegment ? 'text-foreground' : '')}>
+          <House size="1rem" />
+          <BreadcrumbLink asChild>
+            <Link href="/">Home</Link>
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+        {segments.map((segment) => {
+          return (
+            <>
+              <BreadcrumbSeparator className="px-1" />
+              <BreadcrumbItem
+                key={segment}
+                className={cn(segment === currentSegment ? 'text-foreground' : '')}
+              >
+                <BreadcrumbLink asChild>
+                  <Link href={`/${segment}`}> {segment}</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+            </>
+          )
+        })}
+      </BreadcrumbList>
+    </Breadcrumb>
   )
 }
