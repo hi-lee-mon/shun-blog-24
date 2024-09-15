@@ -6,14 +6,14 @@ export default function Layout({
   modal: React.ReactNode
 }) {
   return (
-    <div className="container py-2">
+    <div>
       <main>
         {/* /para-inter-rootへのリクエストで以下2つが並列で表示される */}
-        <div className="bg-green-200">
+        <div className="bg-green-400">
           {/* /para-inter-root/@modal/page.tsx */}
           {modal}
         </div>
-        <div className="bg-red-200">
+        <div className="bg-red-400">
           {/* /para-inter-root/page.tsx */}
           {children}
         </div>

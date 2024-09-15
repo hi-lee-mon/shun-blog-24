@@ -25,7 +25,7 @@ export default async function Page({ params: { id } }: { params: { id: string } 
           <DialogDescription>xxx</DialogDescription>
         </DialogHeader>
         <div key={pokemon.id} className="rounded-lg bg-slate-200 p-4">
-          <h2 className="text-xl font-bold">{pokemon.name}</h2>
+          <h2 className="text-xl font-bold text-slate-600">{pokemon.name}</h2>
           <img
             src={pokemon.sprites.front_default}
             className="size-full object-cover"
