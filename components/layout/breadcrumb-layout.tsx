@@ -17,8 +17,6 @@ export const BreadcrumbLayout = () => {
   const pathname = usePathname()
   const currentSegment = pathname.split('/').at(-1)
 
-  console.log({ segments })
-
   return (
     <Breadcrumb>
       <BreadcrumbList className="flex items-center">
