@@ -1,8 +1,10 @@
 'use client'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { cn } from '@/lib/utils'
 import { Menu } from 'lucide-react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const links = [
   {
@@ -20,6 +22,8 @@ const links = [
 ]
 
 export const MobileNav = () => {
+  const pathname = usePathname()
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -35,7 +39,10 @@ export const MobileNav = () => {
               <li key={link.href}>
                 <SheetClose asChild>
                   <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href={link.href} className="capitalize">
+                    <Link
+                      href={link.href}
+                      className={cn('capitalize', pathname === link.href ? 'bg-primary/10' : '')}
+                    >
                       {link.label}
                     </Link>
                   </Button>
