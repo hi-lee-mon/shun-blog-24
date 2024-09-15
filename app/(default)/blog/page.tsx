@@ -1,5 +1,11 @@
 import { BlogPosts } from '@/app/(default)/blog/_components/blog-posts'
 import { Rss } from 'lucide-react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: 'Shunのブログです。',
+}
 
 export default function Blog() {
   return (
