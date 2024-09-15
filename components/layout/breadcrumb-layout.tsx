@@ -21,7 +21,7 @@ export const BreadcrumbLayout = () => {
 
   return (
     <Breadcrumb>
-      <BreadcrumbList className="flex items-center pl-5 pt-8">
+      <BreadcrumbList className="flex items-center">
         {/* ホームのリンクは常に表示する */}
         <BreadcrumbItem className={cn('' === currentSegment ? 'text-foreground' : '')}>
           <House size="1rem" />
