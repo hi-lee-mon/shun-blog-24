@@ -44,23 +44,21 @@ export const BreadcrumbLayout = () => {
           if (arr.length === index + 1) {
             // 最後の要素の場合はリンクではなくテキストを表示する
             return (
-              <>
+              <div key={segment} className="flex items-center">
                 <BreadcrumbSeparator className="px-1" />
-                <p key={segment} className="text-foreground">
-                  {segment}
-                </p>
-              </>
+                <p className="text-foreground">{segment}</p>
+              </div>
             )
           }
           return (
-            <>
+            <div key={segment} className="flex items-center">
               <BreadcrumbSeparator className="px-1" />
-              <BreadcrumbItem key={segment}>
+              <BreadcrumbItem>
                 <BreadcrumbLink asChild>
                   <Link href={`/${arr.slice(0, index + 1).join('/')}`}> {segment}</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
-            </>
+            </div>
           )
         })}
       </BreadcrumbList>
