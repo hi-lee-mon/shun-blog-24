@@ -77,7 +77,10 @@ export default function Avatar({
         <div className="avatar no-image" style={{ height: size, width: size }} />
       )}
       <div style={{ width: size }}>
-        <label className="button primary block" htmlFor="single">
+        <label
+          className="button primary my-2 block rounded-lg border p-2 hover:cursor-pointer hover:bg-muted hover:transition-all"
+          htmlFor="single"
+        >
           {uploading ? 'Uploading ...' : 'Upload'}
         </label>
         <input

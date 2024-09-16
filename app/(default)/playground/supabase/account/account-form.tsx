@@ -1,5 +1,7 @@
 'use client'
 import Avatar from '@/app/(default)/playground/supabase/account/avatar'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 import { createClient } from '@/lib/supabase/client'
 import { type User } from '@supabase/supabase-js'
 import { useCallback, useEffect, useState } from 'react'
@@ -75,7 +77,7 @@ export default function AccountForm({ user }: { user: User | null }) {
   }
 
   return (
-    <div className="form-widget">
+    <div className="form-widget flex flex-col gap-4">
       <Avatar
         uid={user?.id ?? null}
         url={avatar_url}
@@ -86,12 +88,12 @@ export default function AccountForm({ user }: { user: User | null }) {
         }}
       />
       <div>
-        <label htmlFor="email">Email</label>
-        <input id="email" type="text" value={user?.email} readOnly disabled />
+        <label htmlFor="email">メール</label>
+        <Input id="email" type="text" value={user?.email} readOnly disabled />
       </div>
       <div>
-        <label htmlFor="fullName">Full Name</label>
-        <input
+        <label htmlFor="fullName">フルネーム</label>
+        <Input
           id="fullName"
           type="text"
           value={fullname || ''}
@@ -99,39 +101,38 @@ export default function AccountForm({ user }: { user: User | null }) {
         />
       </div>
       <div>
-        <label htmlFor="username">Username</label>
-        <input
+        <label htmlFor="username">ユーザ名</label>
+        <Input
           id="username"
           type="text"
           value={username || ''}
           onChange={(e) => setUsername(e.target.value)}
         />
       </div>
-      <div>
-        <label htmlFor="website">Website</label>
-        <input
+      <div className="mb-6">
+        <label htmlFor="website">Webサイト</label>
+        <Input
           id="website"
           type="url"
           value={website || ''}
           onChange={(e) => setWebsite(e.target.value)}
         />
       </div>
-
       <div>
-        <button
+        <Button
           className="button primary block"
           onClick={() => updateProfile({ fullname, username, website, avatar_url })}
           disabled={loading}
         >
-          {loading ? 'Loading ...' : 'Update'}
-        </button>
+          {loading ? '更新中 ...' : 'ユーザ情報を更新'}
+        </Button>
       </div>
 
       <div>
-        <form action="/auth/signout" method="post">
-          <button className="button block" type="submit">
-            Sign out
-          </button>
+        <form action="/playground/supabase/api/auth/signout" method="post">
+          <Button className="button block" type="submit">
+            ログアウト
+          </Button>
         </form>
       </div>
     </div>
