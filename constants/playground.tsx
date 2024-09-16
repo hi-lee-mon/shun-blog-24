@@ -79,4 +79,9 @@ export const playgroundContents: Content[] = [
     path: 'todo-list',
     type: 'react',
   },
+  {
+    title: '無限ローディング',
+    path: 'swr-infinite-loading',
+    type: 'swr',
+  },
 ]
