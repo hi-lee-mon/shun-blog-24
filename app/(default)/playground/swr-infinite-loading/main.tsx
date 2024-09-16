@@ -42,7 +42,7 @@ export default function Main() {
     revalidateFirstPage: false,
   })
 
-  if (!data) return null
+  if (!data) return <Loader2 size={40} className="mx-auto my-10 animate-spin text-blue-500" />
   const users = data.flatMap((d) => d)
 
   return (
