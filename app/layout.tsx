@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@/components/theme/theme-provider'
 import { Toaster } from '@/components/ui/toaster'
 import { cn } from '@/lib/utils'
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { ViewTransitions } from 'next-view-transitions'
 import { Inter } from 'next/font/google'
@@ -34,6 +35,7 @@ export default function RootLayout({
           <ViewTransitions>{children}</ViewTransitions>
           <Toaster />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
