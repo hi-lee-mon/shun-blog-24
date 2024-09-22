@@ -18,14 +18,17 @@ export function BlogPosts() {
             key={post.metadata.title}
             className="relative rounded-lg border bg-card p-4 shadow-sm transition duration-300 hover:shadow-lg dark:hover:border-stone-500"
           >
-            <div className="mb-6 aspect-video bg-muted">{/* TODO:サムネイル表示 */}</div>
-            <div className="flex flex-col space-y-2">
+            <div className="mb-8 flex justify-center rounded-lg bg-muted py-8 text-8xl">
+              {post.metadata.icon}
+            </div>
+            <div className="flex flex-col space-y-1">
               <h2 className="font-bold">
                 <Link href={`/blog/${post.slug}`}>
                   {post.metadata.title}
                   <span className="absolute inset-0"></span>
                 </Link>
               </h2>
+              <p>{post.metadata.publishedAt}</p>
               <p className="line-clamp-3 text-muted-foreground">{post.metadata.summary}</p>
             </div>
           </div>
