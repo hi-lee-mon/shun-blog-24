@@ -1,7 +1,7 @@
 import { IconLinkGroup, IconLinkGroupItem } from '@/app/(default)/_components/icon-link-group'
 import { Section } from '@/app/(default)/_components/section'
 import { Button } from '@/components/ui/button'
-import { myWebs } from '@/constants/myWeb'
+import { links } from '@/constants/links'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
@@ -54,14 +54,14 @@ export default function Home() {
             <li>ゲーム</li>
           </ul>
         </Section>
-        <Section title="My Web" className="animate-[slide-in-bck-top_1.3s]">
+        <Section title="Links" className="animate-[slide-in-bck-top_1.3s]">
           <IconLinkGroup>
-            {myWebs.map((myWeb) => (
+            {links.map((link) => (
               <IconLinkGroupItem
-                key={myWeb.href}
-                logo={myWeb.logo}
-                href={myWeb.href}
-                linkText={myWeb.linkText}
+                key={link.href}
+                logo={link.logo}
+                href={link.href}
+                linkText={link.linkText}
               />
             ))}
           </IconLinkGroup>

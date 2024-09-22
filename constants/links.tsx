@@ -1,7 +1,7 @@
 import { GithubLogo } from '@/components/logo/github-logo'
 import { ZennLogo } from '@/components/logo/zenn-logo'
 
-export const myWebs = [
+export const links = [
   {
     logo: <ZennLogo ariaHidden />,
     href: 'https://zenn.dev/hokoripon',
