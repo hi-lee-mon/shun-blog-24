@@ -22,7 +22,7 @@ export default function Page() {
   return (
     <div>
       <div className="mb-10 flex flex-col gap-4">
-        <h1 className="text-balance text-4xl font-bold">Shunの遊び場</h1>
+        <h1 className="text-balance text-4xl font-bold">実装実績の一覧</h1>
         <p className="text-muted-foreground">Shunが実装できるものを一覧化したページです。</p>
       </div>
       {Array.from(contentsMap).map((map) => {
