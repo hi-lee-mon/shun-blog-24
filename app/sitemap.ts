@@ -17,7 +17,7 @@ export default async function sitemap() {
   }))
 
   const playgrounds = playgroundContents.map((content) => ({
-    url: `${origin}/playground/${content.title}`,
+    url: `${origin}/playground/${content.path}`,
     lastModified: now,
   }))
 
