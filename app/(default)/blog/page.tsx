@@ -1,4 +1,5 @@
 import { BlogPosts } from '@/app/(default)/blog/_components/blog-posts'
+import { getBlogPosts } from '@/lib/blog'
 import { Rss } from 'lucide-react'
 import type { Metadata } from 'next'
 
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
 }
 
 export default function Blog() {
+  const allBlogs = getBlogPosts()
   return (
     <div>
       <div className="mb-10 flex items-center justify-between">
@@ -22,7 +24,7 @@ export default function Blog() {
           <span className="sr-only">RSSフィード</span>
         </a>
       </div>
-      <BlogPosts />
+      <BlogPosts allBlogs={allBlogs} />
     </div>
   )
 }
