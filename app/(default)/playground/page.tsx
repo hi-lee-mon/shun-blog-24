@@ -36,10 +36,7 @@ export default function Page() {
             <div className="flex flex-wrap gap-4 pl-6">
               {contents.map((content) => (
                 <Button key={content.path} variant="outline" asChild>
-                  <Link
-                    href={`/playground/${content.path}`}
-                    className="flex gap-2 text-wrap break-words"
-                  >
+                  <Link href={`/playground/${content.path}`} className="flex gap-2 text-wrap">
                     {contentsType[content.type]}
                     {content.title}
                   </Link>

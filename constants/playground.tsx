@@ -65,7 +65,7 @@ export const playgroundContents: Content[] = [
     type: 'mdx',
   },
   {
-    title: 'メール認証、楽観的更新、ServerActionでTODOアプリ',
+    title: 'メール認証,楽観的更新,ServerAction',
     path: 'supabase',
     type: 'supabase',
   },
