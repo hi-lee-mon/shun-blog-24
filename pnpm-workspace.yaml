@@ -1,0 +1,20 @@
+minimumReleaseAge: 4320
+saveExact: true
+preferFrozenLockfile: true
+onlyBuiltDependencies:
+  - esbuild
+ignoredBuiltDependencies:
+  - es5-ext
+  - unrs-resolver
+overrides:
+  cookie: 2.0.1
+  '@supabase/auth-js': 2.117.1
+  js-yaml@^4: 4.3.2
+  minimatch@^9: 9.0.9
+  postcss: 8.5.28
+  glob: 13.0.6
+allowBuilds:
+  esbuild: true
+  '@vercel/speed-insights': false
+  es5-ext: false
+  unrs-resolver: false
